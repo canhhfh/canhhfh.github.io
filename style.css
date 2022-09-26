@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {    
+    width: 11ch;
+    color: white;
+    animation: typing 1.5s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
